@@ -10,7 +10,7 @@ Vue.use(router)
 export default new router({
     routes: [{
         name:'helloworld',
-        path: '/helloworld/?worldmsg',
+        path: '/helloworld/:worldmsg',
         component: HelloWorld
       },{
         name:'helloearth',
