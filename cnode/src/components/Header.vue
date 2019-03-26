@@ -1,5 +1,6 @@
 <template>
     <div class="header">
+        <div>
             <img src="../assets/cnodejs_light.svg" alt="">
                 <ul>
                     <li><a href="">首页</a></li>
@@ -9,6 +10,7 @@
                     <li><a href="">注册</a></li>
                     <li><a href="">登录</a></li>
                 </ul>
+        </div>
     </div>
 </template>
 <script>
@@ -21,9 +23,12 @@ export default {
     background-color: #5a5555;
     height: 50px;
 }
+.header>div{
+    width: 1400px;
+    margin: auto;
+}
 img{
     max-width: 120px;
-    margin-left: 50px;
     margin-top: 10px;
 }
 ul{

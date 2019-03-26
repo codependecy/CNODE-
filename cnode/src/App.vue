@@ -3,16 +3,18 @@
     <!-- <router-view/> -->
     <Header></Header>
     <contain></contain>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
 import contain from './components/contain'
+import Footer from './components/Footer'
 export default {
   name: 'App',
   components: {
-    contain,Header
+    contain,Header,Footer
   }
 }
 </script>
@@ -22,9 +24,12 @@ export default {
    margin: 0;
    padding: 0;
  }
+ ul{
+   list-style: none;
+ }
  a{
    text-decoration: none;
-   color: #ccc;
-    text-shadow: none;
+   color: #000;
+   text-shadow: none;
  }
 </style>
