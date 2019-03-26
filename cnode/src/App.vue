@@ -1,35 +1,27 @@
 <template>
   <div id="app">
-    <!-- <router-view/> -->
     <Header></Header>
-    <contain></contain>
-    <Footer></Footer>
+    <div class="main">
+      <router-view name="slidebar"></router-view>
+      <router-view name="main"></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import Header from './components/Header'
-import contain from './components/contain'
-import Footer from './components/Footer'
+  import Header from './components/Header'
+  import PostList from './components/PostList'
 export default {
   name: 'App',
-  components: {
-    contain,Header,Footer
+  components:{
+    Header,PostList
   }
 }
 </script>
 
 <style>
- *{
-   margin: 0;
-   padding: 0;
- }
- ul{
-   list-style: none;
- }
- a{
-   text-decoration: none;
-   color: #000;
-   text-shadow: none;
- }
+.main{
+  width: 80%;
+  margin: 0 auto;
+}
 </style>
